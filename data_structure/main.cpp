@@ -3,6 +3,7 @@
 #include "stack.h"
 #include "queue.h"
 #include "binary_tree.h"
+#include "hash_map_1.h"
 
 
 int main() {
@@ -193,6 +194,22 @@ int main() {
 
     /* separate even/odd level elements */
     level_even_odd(root);
+
+
+    cout << "################### Hash map one ##################" << endl;
+    HashMap1 *myMap = new HashMap1;
+    int key;
+    for(int i = 0; i < TABLE_SIZE; i++) {
+        key = i*10;
+        myMap->put(key, key*10);
+        cout << key << ": " << myMap->get(key) << endl;
+    }
+
+    for(int i = 0; i < TABLE_SIZE; i++) {
+        key = i*20;
+        myMap->put(key, key*100);
+        cout << key << ": " << myMap->get(key) << endl;
+    }
 
     return 0;
 }
