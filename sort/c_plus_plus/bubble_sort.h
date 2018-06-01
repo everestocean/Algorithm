@@ -1,5 +1,5 @@
-#ifndef C_PLUS_PLUS_SORT_H
-#define C_PLUS_PLUS_SORT_H
+#ifndef C_PLUS_PLUS_BUBBLE_SORT_H
+#define C_PLUS_PLUS_BUBBLE_SORT_H
 
 #include <iostream>
 
@@ -54,5 +54,4 @@ void BubbleSort1(int a[], int size) {
 
 }
 
-
-#endif //C_PLUS_PLUS_SORT_H
+#endif //C_PLUS_PLUS_BUBBLE_SORT_H
