@@ -6,12 +6,12 @@
 using namespace std;
 
 
-void swap(int *m, int *n)
+void swapItem(int &m, int &n)
 {
     int tmp;
-    tmp = *m;
-    *m = *n;
-    *n = tmp;
+    tmp = m;
+    m = n;
+    n = tmp;
 }
 
 
@@ -27,7 +27,7 @@ void siftDown(int *a, int k, int N)
 
         if(a[k] < a[child])
         {
-            swap(a[child], a[k]);
+            swapItem(a[child], a[k]);
             k = child;
         } else {
             return;
@@ -37,7 +37,7 @@ void siftDown(int *a, int k, int N)
 
 
 /*
- * Merge sort Average nlogn, Worst nlogn, Memory 1, Unstable
+ * Heap sort Average nlogn, Worst nlogn, Memory 1, Unstable
  * */
 void heapSort(int a[], int N)
 {
