@@ -5,6 +5,7 @@
 #include "merge_sort.h"
 #include "heap_sort.h"
 #include "quick_sort.h"
+#include "radix_sort.h"
 
 
 int main() {
@@ -98,5 +99,15 @@ int main() {
     quickSort(g, 0, size_g - 1);
     cout << "----------------------------------" << endl;
     printI(g, size_g);
+
+    cout << "############ Radix Sort ###########" << endl;
+    int h[] = {170, 45, 75, 90, 2, 24, 802, 66};
+    const size_t size_h = sizeof(h)/sizeof(h[0]);
+
+    cout << "pass #0: ";
+    printJ(a,sz);
+    radixSortLSD(&h[0],size_h);
+
+
     return 0;
 }
