@@ -17,7 +17,7 @@ def parenthesis(input_str):
 
     for i in range(len(input_str)):
         if s[i] == "(":
-            op.append(i);
+            op.append(i)
         elif s[i] == ")":
             cp.append(i)
             pair.append((op.pop(), cp.pop()))

@@ -26,6 +26,7 @@ def is_palindrome_1(input_str):
 
 
 if __name__ == "__main__":
+
     word = "civic"
 
     for w in itertools.permutations(word):
